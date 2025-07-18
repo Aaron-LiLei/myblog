@@ -1,0 +1,44 @@
+
+baseURL = "https://your-site.github.io/"
+languageCode = "zh-cn"
+title = "我的简约博客"
+theme = "PaperMod"
+paginate = 10
+defaultContentLanguage = "zh"
+
+[params]
+  ShowReadingTime = true
+  ShowToc = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  disableScrollToTop = false
+  comments = true
+
+[params.homeInfoParams]
+  Title = "欢迎来到我的博客"
+  Content = "记录与分享技术、生活与思考"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.assets]
+  favicon = "favicon.ico"
+
+[params.search]
+  enabled = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+
+googleAnalytics = "G-XXXXXXXXXX"
+disqusShortname = "your-disqus-shortname"
